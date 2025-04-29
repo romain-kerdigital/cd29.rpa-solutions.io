@@ -9,6 +9,7 @@ on:
 permissions:
   contents: write
   pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -16,8 +17,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -37,11 +36,26 @@ jobs:
         run: mkdocs build
       
       - name: Copy CNAME file
-        run: cp CNAME site/
+        run: cp CNAME docs/
+      
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+          
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add docs
+          git commit -m "Update documentation site" || echo "No changes to commit"
+          git push origin main
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
       
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: site
-          branch: gh-pages
-          clean: true 
+        id: deployment
+        uses: actions/deploy-pages@v3 

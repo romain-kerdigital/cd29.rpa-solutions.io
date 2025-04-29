@@ -28,6 +28,10 @@ site_description: >-
 repo_name: romain-kerdigital/cd29.rpa-solutions.io
 repo_url: https://github.com/romain-kerdigital/cd29.rpa-solutions.io
 
+# Directory configuration
+docs_dir: src
+site_dir: docs
+
 # Copyright
 copyright: Copyright &copy; 2023 RPA Solutions 2023
 
