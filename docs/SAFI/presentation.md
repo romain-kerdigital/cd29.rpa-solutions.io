@@ -22,7 +22,7 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 ## Procédure
 
-![Reprise Marchés SAFI - main]()
+![Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
 
 !!! Warning Format date et nombre sur Excel Le format Date sur Excel doit être : JJ/MM/AAAA Le séparateur de décimales doit être un point et non pas une virgule.
 
