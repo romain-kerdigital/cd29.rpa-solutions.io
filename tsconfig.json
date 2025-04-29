@@ -1,41 +1,20 @@
 {
   "compilerOptions": {
-    "alwaysStrict": true,
-    "baseUrl": "src",
-    "esModuleInterop": true,
-    "jsx": "react",
-    "jsxFactory": "h",
-    "lib": [
-      "dom",
-      "esnext",
-      "webworker"
-    ],
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "paths": {
-      "~/*": ["./assets/javascripts/*"],
-      "_/*": ["./.overrides/assets/javascripts/*"]
-    },
-    "removeComments": false,
-    "sourceMap": true,
+    "target": "es5",
+    "lib": ["DOM", "ESNext"],
+    "allowJs": true,
     "skipLibCheck": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "stripInternal": true,
-    "target": "es2015"
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
   },
-  "include": [
-    "src/assets/javascripts",
-    "src/.overrides/assets/javascripts",
-    "tools",
-    "typings"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "babel.config.js", "docusaurus.config.js", "sidebars.js"]
 }

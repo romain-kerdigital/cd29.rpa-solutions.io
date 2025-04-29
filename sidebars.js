@@ -9,9 +9,6 @@
  Create as many sidebars as you want.
  */
 
-// @ts-check
-
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docsSidebar: [
     {
@@ -25,7 +22,8 @@ const sidebars = {
       items: [
         'SAFI/presentation',
         'SAFI/A_Initialisation',
-        'SAFI/B_CreationNouveauMarche'
+        'SAFI/B_CreationNouveauMarche',
+        'SAFI/annexes'
       ]
     },
     {
