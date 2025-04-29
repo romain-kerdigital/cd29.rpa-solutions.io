@@ -24,7 +24,8 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 ![Reprise Marchés SAFI - main](RepriseMarchesSAFI-main.png)
 
-!!! Warning Format date et nombre sur Excel Le format Date sur Excel doit être : JJ/MM/AAAA Le séparateur de décimales doit être un point et non pas une virgule.
+!!! Warning 
+Format date et nombre sur Excel Le format Date sur Excel doit être : JJ/MM/AAAA Le séparateur de décimales doit être un point et non pas une virgule.
 
 ### A\_Initialisation
 
@@ -81,10 +82,12 @@ Pour les faire apparaître, il faut modifier la feuille "RPA" pour que la colonn
 
 Il faut également que toutes les lignes en dessous du tableau soient vides et sans formatage pour que l'automatisation s'arrête.
 
-!!! Note Dans le pire des cas, le système retournera une erreur et ne pourra pas créer de nouveau marché. Les marchés précédents seront bien créés et le rapport d'éxecution sera également à jour. Il suffira de fermer manuellement Excel et Edge.
+!!! Note 
+Dans le pire des cas, le système retournera une erreur et ne pourra pas créer de nouveau marché. Les marchés précédents seront bien créés et le rapport d'éxecution sera également à jour. Il suffira de fermer manuellement Excel et Edge.
 
 Après le traitement, les données sont toujours dans la feuille "A traiter".
 
 Pour migrer les lignes vers la feuille "Traité", il suffit de remplir "Valide" dans la feuille "RPA"
 
-!!! Warning Le rapport d'exécution restera dans la feuille "A traiter", il faudra reporter ces informations dans la feuille "Traité" manuellement.
+!!! Warning 
+Le rapport d'exécution restera dans la feuille "A traiter", il faudra reporter ces informations dans la feuille "Traité" manuellement.
