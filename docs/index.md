@@ -1,10 +1,7 @@
 ---
-id: index
+template: home.html
 title: Documentation CD29
-sidebar_position: 1
-slug: /
+ᴴₒᴴₒᴴₒ: false
 ---
 
-# Documentation CD29
-
-Bienvenue sur la documentation CD29 
+Documentation CD29
