@@ -25,21 +25,14 @@ const sidebars = {
       items: [
         'SAFI/presentation',
         'SAFI/A_Initialisation',
-        'SAFI/B_CreationNouveauMarche',
-        'SAFI/C_CreationContractant',
-        'SAFI/D_FormulesActes',
-        'SAFI/E_RapportExecution',
-        'SAFI/F_Finalisation',
-        'SAFI/G_RapportErreur',
-        'SAFI/annexes'
+        'SAFI/B_CreationNouveauMarche'
       ]
     },
     {
       type: 'category',
       label: 'Mémo Javascript',
       items: [
-        'memo-javascript/general',
-        'memo-javascript/grand-angle'
+        'memo-javascript/general'
       ]
     }
   ]
