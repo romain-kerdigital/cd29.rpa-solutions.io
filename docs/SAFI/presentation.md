@@ -18,10 +18,7 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 [Lien vers le diagramme LucidChart](https://lucid.app/lucidchart/481ce2c2-3b15-4080-a4a7-5e4b729edab0/edit?viewport_loc=-3659%2C-1579%2C45266%2C27069%2C0_0&amp;invitationId=inv_0482e918-03d2-4dc7-ac95-2fddd838edbc)
 
-<video controls>
-  <source src="CD29-RepriseMarchesSAFI.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas la lecture de vidéos.
-</video>
+![type:video](/SAFI/CD29-RepriseMarchesSAFI.mp4)
 
 ## Procédure
 
