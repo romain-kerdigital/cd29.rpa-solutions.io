@@ -6,7 +6,7 @@ Un fichier Excel Online pour favoriser un travail collaboratif entre la DFP et l
 
 Les modifications sont traitées en temps réel avec les données à jour pour permettre à la DFP de mettre à jour les valeurs et que la RPA puisse continuer les tests au fur et à mesure.
 
-Le fichier Excel comporte environ 200 colonnes. Elles sont détaillées en [Annexes](/SAFI/annexes)
+Le fichier Excel comporte environ 200 colonnes. Elles sont détaillées en [Annexes](annexes)
 
 [Lien vers le fichier Excel](https://1drv.ms/x/s!AmiJK4RIVLBXgSBT9GcikC_QRGv6?e=z07vII)
 
@@ -18,7 +18,7 @@ Il permet de confirmer les étapes à paramétrer pour le robot en envisageant t
 
 [Lien vers le diagramme LucidChart](https://lucid.app/lucidchart/481ce2c2-3b15-4080-a4a7-5e4b729edab0/edit?viewport_loc=-3659%2C-1579%2C45266%2C27069%2C0_0&amp;invitationId=inv_0482e918-03d2-4dc7-ac95-2fddd838edbc)
 
-![type:video](/SAFI/CD29-RepriseMarchesSAFI.mp4)
+![type:video](CD29-RepriseMarchesSAFI.mp4)
 
 ## Procédure
 
