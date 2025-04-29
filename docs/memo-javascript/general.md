@@ -76,7 +76,3 @@ document.getElementsByTagName('a')[4].click()
 ```javascript
 document.test()
 ```
-
-## Choisir un élément dans une liste déroulante
-
-## Choisir un élément dans une liste de boutons radio
