@@ -25,8 +25,8 @@ site_author: RPA Solutions
 site_description: >-
   Documentation pour le Conseil départemental du finistère.
 # Repository
-repo_name: romain-kerdigital/cd29.rpa-solutions.io
-repo_url: https://github.com/romain-kerdigital/cd29.rpa-solutions.io
+# repo_name: romain-kerdigital/cd29.rpa-solutions.io
+# repo_url: https://github.com/romain-kerdigital/cd29.rpa-solutions.io
 
 # Copyright
 copyright: Copyright &copy; 2023 RPA Solutions 2023
