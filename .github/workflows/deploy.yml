@@ -33,21 +33,22 @@ jobs:
           pip install mkdocs-minify-plugin
           pip install mkdocs-video
       
-      - name: Build site
-        run: mkdocs build
+      - name: Build site to docs directory
+        run: mkdocs build -d docs
       
       - name: Copy CNAME file
-        run: cp CNAME site/
+        run: cp CNAME docs/
       
       - name: Create index.html redirect if needed
         run: |
-          if [ ! -f site/index.html ]; then
-            echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./index/" /><title>Redirect</title></head><body><p>Redirecting...</p></body></html>' > site/index.html
+          if [ ! -f docs/index.html ]; then
+            echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./index/" /><title>Redirect</title></head><body><p>Redirecting...</p></body></html>' > docs/index.html
           fi
       
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: site
-          branch: gh-pages
-          clean: true 
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add docs
+          git commit -m "Update documentation site" || echo "No changes to commit"
+          git push 

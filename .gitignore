@@ -3,6 +3,10 @@
 
 # Production
 /build
+site/
+
+# Exclude docs directory from being ignored as it's used for GitHub Pages
+!/docs
 
 # Generated files
 .docusaurus
