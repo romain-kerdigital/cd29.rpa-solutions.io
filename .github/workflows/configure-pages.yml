@@ -1,0 +1,26 @@
+name: Configure GitHub Pages
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Deploy MkDocs to GitHub Pages"]
+    types:
+      - completed
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  configure-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+          source_dir: / 

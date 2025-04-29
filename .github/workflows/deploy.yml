@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -31,6 +35,15 @@ jobs:
       
       - name: Build site
         run: mkdocs build
+      
+      - name: Copy CNAME file
+        run: cp CNAME site/
+      
+      - name: Create index.html redirect if needed
+        run: |
+          if [ ! -f site/index.html ]; then
+            echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=./index/" /><title>Redirect</title></head><body><p>Redirecting...</p></body></html>' > site/index.html
+          fi
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
