@@ -18,9 +18,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: gh-pages
         
       - name: Setup Pages
         uses: actions/configure-pages@v4
         with:
           enablement: true
-          source_dir: ./docs 
+          # Use root of gh-pages branch
+          source_dir: / 
